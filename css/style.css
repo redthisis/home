@@ -311,6 +311,7 @@ p {
 	gap: 64px;
 	position: absolute;
 	width: 100%;
+	height: 100svh;
 }
 
 #timer-running.hidden {
@@ -324,7 +325,7 @@ p {
 
 #timer-end.visible {
 	display: flex;
-	height: 100vh;
+	height: 100svh;
 	justify-content: center;
 	animation: fadeIn 1.6s forwards 1.6s;
 }
@@ -355,10 +356,9 @@ p {
 /* ================================================= */
 
 #timer-running {
-	padding: 3rem;
-	margin: 0 auto;
 	text-align: center;
 	align-items: center;
+	height: 100svh;
 }
 
 #timer-container {
@@ -375,7 +375,7 @@ p {
 }
 
 #timer-container li:nth-child(odd) {
-	min-width: 4rem;
+	min-width: 2.5rem;
 }
 
 #timer-container li:nth-child(even) {
@@ -383,7 +383,6 @@ p {
 	font-size: 2.4rem;
 	line-height: 1.3;
 	font-weight: 300;
-	width: auto;
 	padding-top: .4rem;
 }
 
@@ -409,54 +408,31 @@ p {
 
 @media screen and (max-width: 768px) {
 
-	#timer-container {
-		background-color: white;
-		padding: 2rem;
-		margin-top: 2rem;
-		list-style: none;
-		border-radius: 8px;
-		color: red;
-		display: flex;
-		flex-direction: row;
-		gap: .1rem;
-		margin-top: 4rem;
+	#timer-running,
+	#timer-end {
+		height: 100svh;
 	}
 	
-	#timer-container span {
-		color: red;
-		font-size: 2rem;
-		line-height: 1.3;
-		font-weight: 700;
-		font-family: 'VT323', monospace;
+	#timer-container {
+		gap: .2rem;
 	}
 	
 	#timer-container li:nth-child(even) {
-		display: inline-block;
-		font-size: 2.4rem;
-		line-height: 1.3;
-		font-weight: 300;
-		width: auto;
 		padding-top: 5%;
 	}
 
 	.braindump {
-		display: flex;
-		flex-direction: column;
-		max-width: 800px;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-		background-color: white;
 		margin: 2rem 2rem;
-		padding: 1.5rem 1.5rem;
-		border-radius: .5rem;
-		border-color: transparent;
-		max-height: 1300px;
 	}
 
+	.braindump ul {
+		margin-right: .25rem;
+	}
+
+	#social-icons,
 	#bd-social-icons {
-		gap: 1rem;
-		margin-left: 1.5rem;
+		gap: .85rem;
+		margin-right: .5rem;
 	}
 	
 	.logo,
