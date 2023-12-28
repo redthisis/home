@@ -10,7 +10,7 @@
 // let countdownDate = new Date().setMinutes(new Date().getMinutes() + 5)
 
 /* Set countdown date by adding seconds to current date */
-let countdownDate = new Date('27 December 2023 12:00')
+let countdownDate = new Date('30 December 2023 12:00')
 
 let timerInterval
 const daysElem = document.querySelector("#days"),
