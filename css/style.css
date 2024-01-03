@@ -421,6 +421,9 @@ p {
 		padding-top: 5%;
 	}
 
+	.braindump {
+		margin: 2rem 2rem;
+	}
 
 	.braindump ul {
 		margin-right: .25rem;
