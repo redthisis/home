@@ -173,6 +173,32 @@ p {
 	background-color: white;
 }
 
+/* ================================================= */
+/* NFT-STATS */
+/* ================================================= */
+
+#nft-stats {
+	display:inline-block;
+	align-items: center;
+	text-decoration: none;
+	margin-top: -4rem;
+}
+
+#nft-stats svg {
+	fill: white;
+	transition: all 0.7s ease-in-out;
+	background-color: red;
+	width: 100px;
+	height: 24px;
+	border-radius: 12px;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+}
+
+#nft-stats a:hover svg {
+	fill: red;
+	background-color: white;
+}
 
 /* ================================================= */
 /* BRAINDUMP SECTION */
